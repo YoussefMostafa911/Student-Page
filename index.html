@@ -1,0 +1,2314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIS Student</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Helwan Logo copy.png" alt="University Logo">
+            <span>Helwan University Faculty Of Commerce & Business Administration</span>
+        </div>
+        <div class="logo">
+            <img src="Logo.png" alt="College Logo">
+            <span>Business Information Systems (BIS)</span>
+        </div>
+
+        <div class="time-widget">
+            <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Africa%2FCairo" width="100%" height="90" frameborder="0" seamless></iframe>
+        </div>
+
+        <div class="buttons">
+          <button class="logout-button"><a style="text-decoration: none;font-weight: bold; color: white;" href="https://ahmedhossam911.github.io/BIS-Login/">Logout</a></button>
+        </div>
+    
+    </nav>
+    
+<!-- Buttons for Student Affairs -->
+    <section class="student-section">
+        <H2 style="color: red;"> Student Affairs </H2>
+        <div class="open-popup-buttons">
+            <button id="openPaymentCodesButton" class="open-popup-button">                
+                Payment Codes 
+                <img class="buttonIMG" src="payment.png" alt="payment">
+               <img class="un_LOCKEDIMG" src="unlocked .jpg" alt="unlocked">
+             </button>
+
+            <button id="openLeganMidTermButton" class="open-popup-button">
+                Legan Mid-Term
+                <img class="buttonIMG" src="leganMid.png" alt="leganMid">
+                <img class="un_LOCKEDIMG" src="unlocked .jpg" alt="unlocked">               
+            </button>
+
+            <button id="openLeganFinalButton" class="open-popup-button">
+                Legan Final
+                <img class="buttonIMG" src="leganFinal copy.png" alt="leganFinal">
+                <img class="un_LOCKEDIMG" src="unlocked .jpg" alt="unlocked">
+             </button>
+
+            <button id="openMidTermExamResultsButton" class="open-popup-button">
+                Mid Term Exam Results
+                <img class="buttonIMG" src="results.png" alt="Mid Term Exam Results">
+                <img class="un_LOCKEDIMG" src="unlocked .jpg" alt="unlocked">
+             </button>
+
+            <button id="openFinalExamResultsButton" class="open-popup-button">
+                Final Exam Results
+                <img class="buttonIMG" src="results.png" alt="Final Exam Results">
+                <img class="un_LOCKEDIMG" src="unlocked .jpg" alt="unlocked">
+             </button>
+
+             <button id="openCertificateButton" class="open-popup-button">
+                Certificate
+                <img class="buttonIMG" src="cerfificate copy.png" alt="cerfificate">
+                <img class="un_LOCKEDIMG" src="unlocked .jpg" alt="locked logo">
+            </button>
+
+            <button id="openYourInfoButton" class="open-popup-button">
+                Your Info
+                <img class="buttonIMG" src="info.png" alt="cerfificate">
+                <img class="un_LOCKEDIMG" src="unlocked .jpg" alt="unlocked">
+             </button>
+
+
+            <button id="openmedicalcareButton" class="open-popup-button">
+                medical care
+                <img class="buttonIMG" src="medical care  copy.png" alt="cerfificate">
+                <img class="un_LOCKEDIMG" src="unlocked .jpg" alt="unlocked">
+             </button>
+
+            <button id="opencomplaintsandsuggestionsButton" class="open-popup-button">
+                complaints and suggestions
+                <img class="buttonIMG" src="complaints and suggestions.png" alt="cerfificate">
+                <img class="un_LOCKEDIMG" src="unlocked .jpg" alt="unlocked">
+         </button>
+
+        </div>
+    </section>
+    
+<!-- Buttons for Courses Affairs -->
+    <section class="student-section">
+        <H2 style="color: red;"> Courses Affairs </H2>
+        <div class="open-popup-buttons">
+            <button id="openpopupAcademicProfile" class="open-popup-button">  
+                Acadimic profile               
+                <img class="buttonIMG" src="history.png" alt="history">
+                <img class="un_LOCKEDIMG" src="unlocked .jpg" alt="unlocked">
+             </button>
+
+             <button id="openpopupcourseevaluation" class="open-popup-button" disabled style="background-color: transparent;">
+                course evaluation 
+                <img class="buttonIMG" src="evaluation.png" alt="evaluation">
+                <img class="un_LOCKEDIMG" src="it_is_locked.png" alt="unlocked">
+             </button>
+
+            <button id="opencourseRegistration" class="open-popup-button">
+                course Registration 
+                <img class="buttonIMG" src="reg.jpg" alt="Registration">
+                <img class="un_LOCKEDIMG" src="unlocked .jpg" alt="unlocked">
+             </button>
+
+            <button id="openpopupannouncement" class="open-popup-button">
+                Announcement
+                <img class="buttonIMG" src="ann.png" alt="leganMid">
+                <img class="un_LOCKEDIMG" src="unlocked .jpg" alt="unlocked">
+            </button>
+
+            <button id="openCoursesScheduleButton" class="open-popup-button">
+                Courses Schedule
+                <img class="buttonIMG" src="schedule.png" alt="Project">
+                <img class="un_LOCKEDIMG" src="unlocked .jpg" alt="unlocked">
+             </button>
+
+            <button id="openGraduationProject" class="open-popup-button" disabled style="background-color: transparent;">
+                Graduation Project 
+                <img class="buttonIMG" src="Project.png" alt="Project">
+                <img class="un_LOCKEDIMG" src="it_is_locked.png" alt="unlocked">
+             </button>
+
+
+
+        </div>
+    </section>
+
+
+<!-- popups -->
+<!-- popup section for Your Info  -->
+    <div id="popup_Your_Info" class="popup">
+    <div class="popup-content">
+        <span class="close-button" id="close-button">&times;</span>
+        <div class="container">
+            <div>
+              <h2 style="color: red;">Your Information</h2>
+        
+              <table>
+                <tr style=" color: white;">
+                  <th style=" background-color: #172533 ;">Student Name</th>
+                  <th style=" background-color: #fff ; color: black;">Ahmed Hossam EL-dine Mohammed</th>
+                  <th>Student ID</th>
+                  <th style=" background-color: #fff ; color: black;">2354828</th>
+              </tr>
+        
+              <tr style=" color: white;">
+                  <th style=" background-color: #172533 ;">Credit Houres Done</th>
+                  <th style=" background-color: #fff ; color: black;">31</th>
+                  <th>Credit Houres remaining</th>
+                  <th style=" background-color: #fff ; color: black;">98</th>
+              </tr>
+        
+              <tr style=" color: white;">
+                  <th style=" background-color: #172533 ;">Semester GPA</th>
+                  <th style=" background-color: #fff ; color: black;">3.7</th>
+                  <th>Accumulated GPA</th>
+                  <th style=" background-color: #fff ; color: black;">3.8</th>
+              </tr>
+        
+              <tr style=" color: white;">
+                  <th style=" background-color: #172533 ;">E-Mail</th>
+                  <th colspan="4" style=" background-color: #fff ; color: black;">xxxxx xxxxxx.155484@commerce.helwan.edu.eg</th>
+              </tr>
+        
+              <tr style=" color: white;">
+                  <th style=" background-color: #172533 ;">Status of military education <br> males-only </th>
+                  <th colspan="4" style=" background-color: #fff ; color: black;">Not Finished</th>
+              </tr>
+        
+              </table>
+            </div>
+          </div>
+                
+    </div>
+</div>
+
+<!-- popup section for Graduation Project  -->
+    <div id="popup_Graduation_project" class="popup">
+    <div class="popup-content">
+        <span class="close-button" id="close-button">&times;</span>
+        <h2 style="color: white;background-color: #172533;" >popup Graduation project</h2>
+        
+    </div>
+</div>
+
+<!-- popup section for Legan mid -->
+    <div id="popup_Legan_mid" class="popup">
+    <div class="popup-content">
+        <span class="close-button" id="close-button">&times;</span>
+        <div class="container">
+            <div>
+              <h2 style="color: red; display: block;" >Legan Mid-Term semester (2)</h2>
+    
+              <table style="display: block;">
+                <tr style="color: white;">
+                  <th style="background-color: #172533;">Course Name</th>
+                  <th>Room Number</th>
+                </tr>
+                <tr>
+                  <td>Principles of Accounting 2</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>Behavior Management</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>Operating System</td>
+                  <td>Lab 2</td>
+                </tr>
+                <tr>
+                  <td>Information Systems</td>
+                  <td>19</td>
+                </tr>
+                <tr>
+                  <td>English 1</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Social Issues</td>
+                  <td>2</td>
+                </tr>
+              </table>
+            </div>
+          </div>                
+    </div>
+</div>
+
+<!-- popup section for Academic Profile  -->
+    <div id="popup_Academic_Profile" class="popup">
+    <div class="popup-content">
+        <span class="close-button" id="close-button">&times;</span>
+  
+        <h2 style="color: red;">Student Academic Profile</h2>
+
+          <div class="pagination">  
+            <button onclick="toggleVisibility(5)"> Your Academic Information </button>
+            <button onclick="toggleVisibility(4)"> Faculty Requirements </button>
+            <button onclick="toggleVisibility(2)"> Specialization Requirements </button>
+            <button onclick="toggleVisibility(3)"> University Requirements </button>
+          </div>
+
+          <div class="page" id="page5" style="display: block;">
+            <table>
+
+                <tr style=" color: white;">
+                    <th style=" background-color: #172533 ;">Student Name</th>
+                    <th style=" background-color: #fff ; color: black;">Ahmed Hossam EL-dine Mohammed</th>
+                    <th>Student ID</th>
+                    <th style=" background-color: #fff ; color: black;">2354828</th>
+                </tr>
+    
+                <tr style=" color: white;">
+                    <th style=" background-color: #172533 ;">Credit Houres Done</th>
+                    <th style=" background-color: #fff ; color: black;">31</th>
+                    <th>Credit Houres remaining</th>
+                    <th style=" background-color: #fff ; color: black;">98</th>
+                </tr>
+    
+                <tr style=" color: white;">
+                    <th style=" background-color: #172533 ;">Semester GPA</th>
+                    <th style=" background-color: #fff ; color: black;">3.7</th>
+                    <th>Accumulated GPA</th>
+                    <th style=" background-color: #fff ; color: black;">3.8</th>
+                </tr>
+
+                <tr style=" color: white;">
+                    <th style=" background-color: #fff ; color: black;" colspan="4">Click On the Buttons to See Your Courses Details</th>
+                </tr>
+    
+            </table>     
+            </div>
+
+        <div class="container">
+            <div class="page" id="page4" style="display: none;">
+            <table>
+                <h3>Faculty Requirements</h3>
+                <tr  style=" color: white;">
+                    <th colspan="3">Mandatory Subjects <br> [ 51 Hours  =  17 Subjects ]</th>
+                </tr>
+                
+                <tr style=" color: white;">
+                    <th style=" background-color: #172533 ;">Course Name</th>
+                    <th>Credit Hours</th>
+                    <th>status</th>
+                </tr>
+    
+    
+                <tr>
+                    <td>Principles of Accounting 1</td>
+                    <td>3</td>
+                    <td style="background-color: green;"> Done </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Principles of Accounting 2</td>
+                    <td>3</td>
+                    <td style="background-color: green;"> Done </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Principles of Economics</td>
+                    <td>3</td>
+                    <td style="background-color: green;"> Done </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Principles of Management</td>
+                    <td>3</td>
+                    <td style="background-color: green;"> Done </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Behavior Management	</td>
+                    <td>3</td>
+                    <td style="background-color: green;"> Done </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Business Math</td>
+                    <td>3</td>
+                    <td style="background-color: green;"> Done </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Accounting for Partnerships</td>
+                    <td>3</td>
+                    <td style="background-color: green;"> Done </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Accounting for Corporations	</td>
+                    <td>3</td>
+                    <td style="background-color: green;"> Done </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Cost Accounting</td>
+                    <td>3</td>
+                    <td style="background-color: orange;"> In Progress </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Principles of Auditing</td>
+                    <td>3</td>
+                    <td style="background-color: orange;"> In Progress </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Manegerial Accounting</td>
+                    <td>3</td>
+                    <td style="background-color: orange;"> In Progress </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Economics of Money and Banking</td>
+                    <td>3</td>
+                    <td style="background-color: red;"> Failed </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Production and Operations Management</td>
+                    <td>3</td>
+                    <td style="background-color: #fff;"> not registered </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Management of Marketing</td>
+                    <td>3</td>
+                    <td style="background-color: #fff;"> not registered </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Financial Management and Investment</td>
+                    <td>3</td>
+                    <td style="background-color: #fff;"> not registered </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Human Resources Management</td>
+                    <td>3</td>
+                    <td style="background-color: #fff;"> not registered </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Statistics</td>
+                    <td>3</td>
+                    <td style="background-color: #fff;"> not registered </td>
+                </tr>
+    
+    
+            </table>
+    
+            <table>
+    
+                <tr style=" color: white;">
+                    <th colspan="3">Elective Subjects<br>[ 9 Hours  =  3 Subjects ]</th>
+                </tr>
+                
+                <tr style=" color: white;">
+                    <th style=" background-color: #172533 ;">Course Name</th>
+                    <th>Credit Hours</th>
+                    <th>status</th>
+                </tr>
+    
+    
+                <tr>
+                    <td>Tax Accounting</td>
+                    <td>3</td>
+                    <td style="background-color: green;"> Done </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Accounting in Financial Institutions</td>
+                    <td>3</td>
+                    <td style="background-color: orange;"> In Progress </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>The Economics of Foreign Trade</td>
+                    <td>3</td>
+                    <td style="background-color: #fff;"> not registered </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Economic Planning</td>
+                    <td>3</td>
+                    <td style="background-color: #fff;"> not registered </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Economics of Public Finance</td>
+                    <td>3</td>
+                    <td style="background-color: #fff;"> not registered </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Economics of Information</td>
+                    <td>3</td>
+                    <td style="background-color: #fff;"> not registered </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Material Management</td>
+                    <td>3</td>
+                    <td style="background-color: #fff;"> not registered </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Management of Specialized Institutions	</td>
+                    <td>3</td>
+                    <td style="background-color: #fff;"> not registered </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>International Relations</td>
+                    <td>3</td>
+                    <td style="background-color: #fff;"> not registered </td>
+                </tr>
+    
+    
+    
+    
+            </table>
+    
+            <p class="note_title"> ملاحظات هامة </p>
+            <p class="note">1. الرسوب فى المواد الاجبارية يتطلب إعاده تسجيل نفس الماده والنجاح بها وبالتالى سيتم حذف الماده التى رسبت فيها من سجل الطالب عند النجاح فيها مره اخرى</p>
+            <p class="note">2. الرسوب فى المواد الاختيارية لا يتطلب تسجيلها مره اخرى حيث من الممكن تسجيل ماده اخرى من نفس الفئة ويتم حذف الماده التى رسبت فيه من سجل الطالب عند التخرج</p>
+            <p class="note">3. بالنسبة الي متطلبات الكلية الاختيارية يتم دراسة 3 مواد فقط</p>
+            
+            </div>
+    
+            <div class="page" id="page2" style="display: none;">
+    
+                <table>
+    
+                    <h3>Specialization Requirements</h3>
+                    <tr  style=" color: white;">
+                        <th colspan="3">Mandatory Subjects <br> [ 48 Hours  =  16 Subjects ] </th>
+                    </tr>
+                    
+                    <tr style=" color: white;">
+                        <th style=" background-color: #172533 ;">Course Name</th>
+                        <th>Credit Hours</th>
+                        <th>status</th>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>Introduction to ComputerIntroduction to Computer</td>
+                        <td>3</td>
+                        <td style="background-color: green;"> Done </td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>Information Systems</td>
+                        <td>3</td>
+                        <td style="background-color: green;"> Done </td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>Operating System 1</td>
+                        <td>3</td>
+                        <td style="background-color: green;"> Done </td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>Programming 1</td>
+                        <td>3</td>
+                        <td style="background-color: green;"> Done </td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>Database</td>
+                        <td>3</td>
+                        <td style="background-color: #fff;"> not registered </td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>System Analysis 1</td>
+                        <td>3</td>
+                        <td style="background-color: green;"> Done </td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>System Analysis 2</td>
+                        <td>3</td>
+                        <td style="background-color: #fff;"> not registered </td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>E-Commerce</td>
+                        <td>3</td>
+                        <td style="background-color: #fff;"> not registered </td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>Management Information Systems</td>
+                        <td>3</td>
+                        <td style="background-color: #fff;"> not registered </td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>Programming 2</td>
+                        <td>3</td>
+                        <td style="background-color: orange;"> In Progress </td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>Operations Research</td>
+                        <td>3</td>
+                        <td style="background-color: orange;"> In Progress </td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>Decision Support Systems</td>
+                        <td>3</td>
+                        <td style="background-color: #fff;"> not registered </td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>Computer Networks</td>
+                        <td>3</td>
+                        <td style="background-color: #fff;"> not registered </td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>Data Security</td>
+                        <td>3</td>
+                        <td style="background-color: #fff;"> not registered </td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>Project 1</td>
+                        <td>3</td>
+                        <td style="background-color: #fff;"> not registered </td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>Project 2</td>
+                        <td>3</td>
+                        <td style="background-color: #fff;"> not registered </td>
+                    </tr>
+        
+        
+        
+        
+                </table>
+        
+                <table>
+        
+                    <tr style=" color: white;">
+                        <th colspan="3">Elective Subjects<br>[ 9 Hours  =  3 Subjects ]</th>
+                    </tr>
+                    
+                    <tr style=" color: white;">
+                        <th style=" background-color: #172533 ;">Course Name</th>
+                        <th>Credit Hours</th>
+                        <th>status</th>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>E-Commerce Sites</td>
+                        <td>3</td>
+                        <td style="background-color: green;"> Done </td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>Medical Information Systems and Health</td>
+                        <td>3</td>
+                        <td style="background-color: #fff;"> not registered </td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>Internet Applications</td>
+                        <td>3</td>
+                        <td style="background-color: #fff;"> not registered </td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>Advanced E-Commerce	</td>
+                        <td>3</td>
+                        <td style="background-color: #fff;"> not registered </td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>Accounting Information Systems</td>
+                        <td>3</td>
+                        <td style="background-color: #fff;"> not registered </td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>Advanced Database</td>
+                        <td>3</td>
+                        <td style="background-color: #fff;"> not registered </td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>Software Engineering</td>
+                        <td>3</td>
+                        <td style="background-color: #fff;"> not registered </td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>Project Management	</td>
+                        <td>3</td>
+                        <td style="background-color: #fff;"> not registered </td>
+                    </tr>
+            
+        
+                </table>
+        
+                <p class="note_title"> ملاحظات هامة </p>
+                <p class="note">1. الرسوب فى المواد الاجبارية يتطلب إعاده تسجيل نفس الماده والنجاح بها وبالتالى سيتم حذف الماده التى رسبت فيها من سجل الطالب عند النجاح فيها مره اخرى</p>
+                <p class="note">2. الرسوب فى المواد الاختيارية لا يتطلب تسجيلها مره اخرى حيث من الممكن تسجيل ماده اخرى من نفس الفئة ويتم حذف الماده التى رسبت فيه من سجل الطالب عند التخرج</p>
+                <p class="note">3. بالنسبة الي متطلبات التخصص الاختيارية يتم دراسة 3 مواد فقط</p>
+        
+            </div>
+        
+            <div class="page" id="page3" style="display: none;">
+    
+            <table>
+    
+                <h3> University Requirements </h3>
+                <tr  style=" color: white;">
+                    <th colspan="3">Mandatory Subjects <br> [ 6 Hours  =  3 Subjects ] </th>
+                </tr>
+                
+                <tr style=" color: white;">
+                    <th style=" background-color: #172533 ;">Course Name</th>
+                    <th>Credit Hours</th>
+                    <th>status</th>
+                </tr>
+    
+    
+                <tr>
+                    <td>English 1</td>
+                    <td>2</td>
+                    <td style="background-color: green;"> Done </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Social Issues</td>
+                    <td>2</td>
+                    <td style="background-color: green;"> Done </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>English 2</td>
+                    <td>2</td>
+                    <td style="background-color: green;"> Done </td>
+                </tr>
+    
+    
+    
+    
+            </table>
+    
+            <table>
+    
+                <tr style=" color: white;">
+                    <th colspan="3">Elective Subjects<br>[ 6 Hours  =  2 Subjects ]</th>
+                </tr>
+                
+                <tr style=" color: white;">
+                    <th style=" background-color: #172533 ;">Course Name</th>
+                    <th>Credit Hours</th>
+                    <th>status</th>
+                </tr>
+    
+    
+                <tr>
+                    <td>Principle of Law</td>
+                    <td>3</td>
+                    <td style="background-color: #fff;"> not registered </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Communication & Negotiation</td>
+                    <td>3</td>
+                    <td style="background-color: #fff;"> not registered </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Creative Thinking</td>
+                    <td>3</td>
+                    <td style="background-color: #fff;"> not registered </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Media</td>
+                    <td>3</td>
+                    <td style="background-color: #fff;"> not registered </td>
+                </tr>
+    
+    
+                <tr>
+                    <td>Professional Ethics</td>
+                    <td>3</td>
+                    <td style="background-color: #fff;"> not registered </td>
+                </tr>
+    
+        
+    
+            </table>
+    
+            <p class="note_title"> ملاحظات هامة </p>
+            <p class="note">1. الرسوب فى المواد الاجبارية يتطلب إعاده تسجيل نفس الماده والنجاح بها وبالتالى سيتم حذف الماده التى رسبت فيها من سجل الطالب عند النجاح فيها مره اخرى</p>
+            <p class="note">2. الرسوب فى المواد الاختيارية لا يتطلب تسجيلها مره اخرى حيث من الممكن تسجيل ماده اخرى من نفس الفئة ويتم حذف الماده التى رسبت فيه من سجل الطالب عند التخرج</p>
+            <p class="note">3. بالنسبة الي متطلبات الجامعة الاختيارية يتم دراسة 3 مواد فقط</p>
+    
+        </div>
+    
+    
+        </div>
+    
+    </div>
+</div>
+
+<!-- popup section for Announcement  -->
+    <div id="popup_announcement" class="popup">
+    <div class="popup-content">
+        <span class="close-button" id="close-button">&times;</span>
+        <h2 style="color: red;">Announcement</h2>
+        <section id="home">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="ad 5.jpg" alt="Ad 5">
+                    </div>
+                    <div class="slide">
+                        <img src="ad 4.jpg" alt="Ad 4">
+                    </div>
+                    <div class="slide">
+                        <img src="ad 3.jpg" alt="Ad 3">
+                    </div>
+                    <div class="slide">
+                        <img src="ad 2.jpg" alt="Ad 2">
+                    </div>
+                    <div class="slide">
+                        <img src="ad 1.jpg" alt="Ad 1">
+                    </div>
+                </div>
+                <button class="prev-btn">&#10094;</button>
+                <button class="next-btn">&#10095;</button>
+            </div>
+        </section>    
+    </div>
+</div>
+
+<!-- popup section for Certificate  -->
+    <div id="popup_Certificate" class="popup">
+    <div class="popup-content">
+        <span class="close-button" id="close-button">&times;</span>
+        <div id="instructions">
+            <h1>تعليمات هامة قبل طلب اثبات القيد</h1>
+            <p>1. اقصي عدد ممكن من الشهادات هو 9 شهادات فقط</p>
+            <p>2. يجب اختيار جهة يتم توجيه اثبات القيد لها</p>
+            <p>3. يمكن الدفع نقدا عند استلام الشهادة من شئون الطلاب في مقر الكلية</p>
+            <p>4. يمكن الدفع ببطاقة ائتمان من خلال الموقع </p>
+            <button id="requestButton">Request Your Registration Certificate</button>
+        </div>
+        
+        <form action="/submit" method="post" style="display: none;">
+            <h1>Registration Certificate</h1>
+            <label for="certificateNumber">Number of Certificates :</label>
+            <input type="number" id="certificateNumber" name="certificateNumber" required max="9" min="1">
+    
+            <br><br>
+    
+            <label for="to">To</label>
+            <input type="text" id="to" name="to" required>
+    
+            <br><br>
+    
+            <label for="paymentMethod">Payment Method</label>
+            <select id="paymentMethod" name="paymentMethod" required>
+                <option value="" disabled selected>Select a payment method</option>
+                <option value="cash">Cash</option>
+                <option value="creditCard">Credit Card</option>
+            </select>
+    
+            <br><br>
+            <div id="creditCardInfo" style="display: none;">
+                <label for="creditCardNumber">Credit Card Number</label>
+                <input type="number" id="creditCardNumber" name="creditCardNumber"  >
+    
+                <label for="cvv">CVV</label>
+                <input type="number" id="cvv" name="cvv"  >
+    
+                <label  for="expiryDate">Expiration Date</label>
+                <input style="width: 95%;" type="date" id="expiryDate" name="expiryDate" placeholder="MM/YY" >
+            </div>
+    
+            <div id="successMessageCER" style="display: none;">
+                <p>تم استلام طلبك بنجاح !!</p>
+            </div>
+    
+            <input type="submit" value="Submit">
+        </form>
+    
+    </div>
+</div>
+
+<!-- popup section for Complaints And Suggestions  -->
+    <div id="popup_complaints_and_suggestions" class="popup">
+    <div class="popup-content">
+        <span class="close-button" id="close-button">&times;</span>
+        <h2 style="color: red; margin-top: 40px;">Complaints And Suggestions</h2>
+        <div id="feedbackFormContainer">
+            <form id="feedbackForm">
+                <label for="title">Title</label>
+                <input  style="height: 50px;" type="text" id="title" name="title" required>
+                <br>
+                <label for="content">Content</label>
+                <textarea  style="height: 200px;" id="content" name="content" required></textarea>
+                <br>
+                <p style="font-size: large; font-weight: bold;">يرجي العلم انه سيتم ادارج كافة بياناتك مع الشكوي/المقترح حتي يتم التحقيق بها وبمجرد تقديمك للشكوي/المقترح يعد موافقة ضمنية منك علي تقديم البيانات في حالة الحاجة لها</p>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+      
+        <div id="responseMessage" style="display: none; text-align: center;">
+            <p>Thank you for your feedback!</p>
+        </div>
+      
+    </div>
+</div>
+
+<!-- popup section for Course Registration  -->
+    <div id="popup_Course_Registration" class="popup">
+    <div class="popup-content">
+        <span class="close-button" id="close-button">&times;</span>
+        <h1 style="color: red;">Course Registration</h1>
+        <table id="course-selection-table">
+          <thead>
+        
+            <tr>
+              <th style="font-size: larger;" colspan="7"> Choose Your Courses</th>
+            </tr>
+        
+            <tr>
+              <th>NO.</th>
+              <th>Course code</th>
+              <th>Course name</th>
+              <th>Category</th>
+              <th>Type</th>
+              <th>Credit hours</th>
+              <th>Register</th>
+            </tr>
+          </thead>
+          <tbody>
+          
+            <tr>
+              <td>1</td>
+              <td>ACC101</td>
+              <td>Principles of Accounting 2</td>
+              <td>Faculty Requirements</td>
+              <td>Mandatory</td>
+              <td>3</td>
+              <td><input type="checkbox" data-course="1"></td>
+            </tr>
+        
+            <tr>
+              <td>2</td>
+              <td>Man102</td>
+              <td>Behavior Management</td>
+              <td>Faculty Requirements</td>
+              <td>Mandatory</td>
+              <td>3</td>
+              <td><input type="checkbox" data-course="1"></td>
+            </tr>
+        
+            <tr>
+              <td>3</td>
+              <td>BIS301</td>
+              <td>Operating System</td>
+              <td>Specialization Requirements</td>
+              <td>Mandatory</td>
+              <td>3</td>
+              <td><input type="checkbox" data-course="1"></td>
+            </tr>
+        
+            <tr>
+              <td>4</td>
+              <td>BIS103</td>
+              <td>Information Systems</td>
+              <td>Specialization Requirements</td>
+              <td>Mandatory</td>
+              <td>3</td>
+              <td><input type="checkbox" data-course="1"></td>
+            </tr>
+        
+            <tr>
+              <td>5</td>
+              <td>CSC101</td>
+              <td>English 1</td>
+              <td>University Requirements</td>
+              <td>Mandatory</td>
+              <td>2</td>
+              <td><input type="checkbox" data-course="1"></td>
+            </tr>
+        
+            <tr>
+              <td>6</td>
+              <td>CSC101</td>
+              <td>Social Issues</td>
+              <td>University Requirements</td>
+              <td>Mandatory</td>
+              <td>2</td>
+              <td><input type="checkbox" data-course="1"></td>
+            </tr>
+        
+        
+        
+        </tbody>
+        </table>
+        
+        <table id="course-details-table" style="display: none;">
+            <thead>
+              
+            <tr>
+              <th style="font-size: larger;" colspan="8"> Choose Your Doctor & Group</th>
+            </tr>
+        
+              <tr>
+                <th>NO.</th>
+                <th>Course code</th>
+                <th>Course name</th>
+                <th>Category</th>
+                <th>Type</th>
+                <th>Credit hours</th>
+                <th>Choose Doctor</th>
+                <th>Choose Day & Group</th>
+              </tr>
+            </thead>
+        
+        
+            <tbody>
+        
+              <tr>
+                <td>1</td>
+                <td>ACC101</td>
+                <td>Principles of Accounting 2</td>
+                <td>Faculty Requirements</td>
+                <td>Mandatory</td>
+                <td>3</td>
+                <td>
+                  <select>
+                    <option value="disabled">Choose Doctor</option>
+                    <option value="Dr. Smith">Dr. xxxx</option>
+                    <option value="Dr. Johnson">Dr. yyyyy</option>
+                    <option value="Dr. Johnson">Dr. zzzzzz</option>
+                    <option value="Dr. Johnson">Dr. mmmmmm</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option value="disabled">Choose Group & Time</option>
+                    <option value="Monday, 9:00 AM, Group A">Monday, 8:00 AM, G1</option>
+                    <option value="Tuesday, 2:00 PM, Group B">Tuesday, 10:30 PM, G2</option>
+                    <option value="Tuesday, 2:00 PM, Group B">Tuesday, 1:00 PM, G3</option>
+                  </select>
+                </td>
+        
+              </tr>
+          
+              <tr>
+                <td>2</td>
+                <td>Man102</td>
+                <td>Behavior Management</td>
+                <td>Faculty Requirements</td>
+                <td>Mandatory</td>
+                <td>3</td>
+                <td>
+                  <select>
+                    <option value="disabled">Choose Doctor</option>
+                    <option value="Dr. Smith">Dr. xxxx</option>
+                    <option value="Dr. Johnson">Dr. yyyyy</option>
+                    <option value="Dr. Johnson">Dr. zzzzzz</option>
+                    <option value="Dr. Johnson">Dr. mmmmmm</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option value="disabled">Choose Group & Time</option>
+                    <option value="Monday, 9:00 AM, Group A">Monday, 8:00 AM, G1</option>
+                    <option value="Tuesday, 2:00 PM, Group B">Tuesday, 10:30 PM, G2</option>
+                    <option value="Tuesday, 2:00 PM, Group B">Tuesday, 1:00 PM, G3</option>
+                  </select>
+                </td>
+              </tr>
+          
+              <tr>
+                <td>3</td>
+                <td>BIS301</td>
+                <td>Operating System</td>
+                <td>Specialization Requirements</td>
+                <td>Mandatory</td>
+                <td>3</td>
+                <td>
+                  <select>
+                    <option value="disabled">Choose Doctor</option>
+                    <option value="Dr. Smith">Dr. xxxx</option>
+                    <option value="Dr. Johnson">Dr. yyyyy</option>
+                    <option value="Dr. Johnson">Dr. zzzzzz</option>
+                    <option value="Dr. Johnson">Dr. mmmmmm</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option value="disabled">Choose Group & Time</option>
+                    <option value="Monday, 9:00 AM, Group A">Monday, 8:00 AM, G1</option>
+                    <option value="Tuesday, 2:00 PM, Group B">Tuesday, 10:30 PM, G2</option>
+                    <option value="Tuesday, 2:00 PM, Group B">Tuesday, 1:00 PM, G3</option>
+                  </select>
+                </td>
+              </tr>
+          
+              <tr>
+                <td>3</td>
+                <td>BIS301</td>
+                <td>Operating System Section</td>
+                <td>Specialization Requirements</td>
+                <td>Mandatory</td>
+                <td>3</td>
+                <td>
+                  <select>
+                    <option value="disabled">Choose Doctor</option>
+                    <option value="Dr. Smith">Dr. xxxx</option>
+                    <option value="Dr. Johnson">Dr. yyyyy</option>
+                    <option value="Dr. Johnson">Dr. zzzzzz</option>
+                    <option value="Dr. Johnson">Dr. mmmmmm</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option value="disabled">Choose Group & Time</option>
+                    <option value="Monday, 9:00 AM, Group A">Monday, 8:00 AM, G1</option>
+                    <option value="Tuesday, 2:00 PM, Group B">Tuesday, 10:30 PM, G2</option>
+                    <option value="Tuesday, 2:00 PM, Group B">Tuesday, 1:00 PM, G3</option>
+                  </select>
+                </td>
+              </tr>
+          
+              <tr>
+                <td>4</td>
+                <td>BIS103</td>
+                <td>Information Systems</td>
+                <td>Specialization Requirements</td>
+                <td>Mandatory</td>
+                <td>3</td>
+                <td>
+                  <select>
+                    <option value="disabled">Choose Doctor</option>
+                    <option value="Dr. Smith">Dr. xxxx</option>
+                    <option value="Dr. Johnson">Dr. yyyyy</option>
+                    <option value="Dr. Johnson">Dr. zzzzzz</option>
+                    <option value="Dr. Johnson">Dr. mmmmmm</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option value="disabled">Choose Group & Time</option>
+                    <option value="Monday, 9:00 AM, Group A">Monday, 8:00 AM, G1</option>
+                    <option value="Tuesday, 2:00 PM, Group B">Tuesday, 10:30 PM, G2</option>
+                    <option value="Tuesday, 2:00 PM, Group B">Tuesday, 1:00 PM, G3</option>
+                  </select>
+                </td>
+              </tr>
+          
+              <tr>
+                <td>4</td>
+                <td>BIS103</td>
+                <td>Information Systems Section</td>
+                <td>Specialization Requirements</td>
+                <td>Mandatory</td>
+                <td>3</td>
+                <td>
+                  <select>
+                    <option value="disabled">Choose Doctor</option>
+                    <option value="Dr. Smith">Dr. xxxx</option>
+                    <option value="Dr. Johnson">Dr. yyyyy</option>
+                    <option value="Dr. Johnson">Dr. zzzzzz</option>
+                    <option value="Dr. Johnson">Dr. mmmmmm</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option value="disabled">Choose Group & Time</option>
+                    <option value="Monday, 9:00 AM, Group A">Monday, 8:00 AM, G1</option>
+                    <option value="Tuesday, 2:00 PM, Group B">Tuesday, 10:30 PM, G2</option>
+                    <option value="Tuesday, 2:00 PM, Group B">Tuesday, 1:00 PM, G3</option>
+                  </select>
+                </td>
+              </tr>
+          
+              <tr>
+                <td>5</td>
+                <td>CSC101</td>
+                <td>English 1</td>
+                <td>University Requirements</td>
+                <td>Mandatory</td>
+                <td>2</td>
+                <td>
+                  <select>
+                    <option value="disabled">Choose Doctor</option>
+                    <option value="Dr. Smith">Dr. xxxx</option>
+                    <option value="Dr. Johnson">Dr. yyyyy</option>
+                    <option value="Dr. Johnson">Dr. zzzzzz</option>
+                    <option value="Dr. Johnson">Dr. mmmmmm</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option value="disabled">Choose Group & Time</option>
+                    <option value="Monday, 9:00 AM, Group A">Monday, 8:00 AM, G1</option>
+                    <option value="Tuesday, 2:00 PM, Group B">Tuesday, 10:30 PM, G2</option>
+                    <option value="Tuesday, 2:00 PM, Group B">Tuesday, 1:00 PM, G3</option>
+                  </select>
+                </td>
+              </tr>
+          
+              <tr>
+                <td>6</td>
+                <td>CSC101</td>
+                <td>Social Issues</td>
+                <td>University Requirements</td>
+                <td>Mandatory</td>
+                <td>2</td>
+                <td>
+                  <select>
+                    <option value="disabled">Choose Doctor</option>
+                    <option value="Dr. Smith">Dr. xxxx</option>
+                    <option value="Dr. Johnson">Dr. yyyyy</option>
+                    <option value="Dr. Johnson">Dr. zzzzzz</option>
+                    <option value="Dr. Johnson">Dr. mmmmmm</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option value="disabled">Choose Group & Time</option>
+                    <option value="Monday, 9:00 AM, Group A">Monday, 8:00 AM, G1</option>
+                    <option value="Tuesday, 2:00 PM, Group B">Tuesday, 10:30 PM, G2</option>
+                    <option value="Tuesday, 2:00 PM, Group B">Tuesday, 1:00 PM, G3</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        
+        
+          <div class="container">
+            <div class="page" id="page9" style="display: none;">
+              <h2 style="color: red;">Yor Schedule after Registration </h2>
+        
+              <table>
+                <tr style="color: white;">
+                  <th style="background-color: #172533;">Course Name</th>
+                  <th>Credit Hours</th>
+                  <th>Day</th>
+                  <th>Time</th>
+                  <th>Group Number</th>
+                  <th>Room Number</th>
+                  <th>Teams Code</th>
+                </tr>
+        
+                <tr style="color: white;">
+                  <th colspan="7" style="background-color: #172533;">Lectures</th>
+                </tr>
+        
+                <tr>
+                  <td>Principles of Accounting 2 <br> dr xxxxx</td>
+                  <td>3</td>
+                  <td>Wednesday</td>
+                  <td>8 : 10.30</td>
+                  <td>G7</td>
+                  <td>25</td>
+                  <td>csaf18</td>
+                </tr>
+        
+                <tr>
+                  <td>Behavior Management <br> dr xxxxx</td>
+                  <td>3</td>
+                  <td>Sunday</td>
+                  <td>8 : 10.30</td>
+                  <td>G6</td>
+                  <td>22</td>
+                  <td>xc5nf8</td>
+                </tr>
+        
+                <tr>
+                  <td>Operating System <br> dr xxxxx</td>
+                  <td>3</td>
+                  <td>Thursday</td>
+                  <td>8 : 10.30</td>
+                  <td>G7</td>
+                  <td>25</td>
+                  <td>bjh587</td>
+                </tr>
+        
+                <tr>
+                  <td>Information Systems <br> dr xxxxx</td>
+                  <td>3</td>
+                  <td>Sunday</td>
+                  <td>10.30 : 1</td>
+                  <td>G14</td>
+                  <td>25</td>
+                  <td>ad81d</td>
+                </tr>
+        
+                <tr>
+                  <td>English 1 <br> dr xxxxx</td>
+                  <td>3</td>
+                  <td>Monday</td>
+                  <td>8 : 10.30</td>
+                  <td>G8</td>
+                  <td>25</td>
+                  <td>dav5x</td>
+                </tr>
+        
+                <tr>
+                  <td>Social Issues <br> dr xxxxx</td>
+                  <td>3</td>
+                  <td>Saturday</td>
+                  <td>8 : 10.30</td>
+                  <td>G10</td>
+                  <td>25</td>
+                  <td>mn54a</td>
+                </tr>
+        
+                <tr style="color: white;">
+                  <th colspan="7" style="background-color: #172533;">Sections</th>
+                </tr>
+        
+              <tr>
+                <td>Operating System <br> dr xxxxx</td>
+                <td>3</td>
+                <td>Thursday</td>
+                <td>1 : 2.30</td>
+                <td>G3</td>
+                <td>25</td>
+                <td>csaf18</td>
+              </tr>
+        
+              <tr>
+                <td>Information Systems <br> dr xxxxx</td>
+                <td>3</td>
+                <td>Sunday</td>
+                <td>2.30 : 3.30</td>
+                <td>G9</td>
+                <td>25</td>
+                <td>csaf18</td>
+              </tr>
+        
+              <tr>
+                <td>Principles of Accounting 2 <br> dr xxxxx</td>
+                <td>3</td>
+                <td>Wednesday</td>
+                <td>1 : 2.30</td>
+                <td>G13</td>
+                <td>25</td>
+                <td>csaf18</td>
+              </tr>
+        
+              </table>
+            </div>
+          </div>
+        
+          <div class="confirm-terms">
+            <div style="text-align: right; direction: rtl;">
+              <input type="checkbox" id="terms" onchange="toggleConfirmButton()">
+              <label style="color: red;" for="terms">أقر أنا الطالب xxxxxxxxxxxxxxxx بان رغبات التسجيل صحيحة وأن لا أطلب تعديل الرغبات إلا بعد إنتهاء عمليه تسجيل الرغبات لجميع المستويات . وأن هذه الرغبات تعتير لإغيه إذا لم اسدد المصروفات الدراسيه فى الوقت المحدد من قبل إدارة البرنامج</label>
+            </div>
+          </div>
+          
+          <button id="confirm-registration" disabled onclick="confirmRegistration()">Confirm Registration</button>
+          <button  id="finish_Registration_Button" style="display: none;" onclick="showScheduleTable()">Finish Registration and Go to your schedule</button>
+        
+    </div>
+</div>
+
+<!-- popup section for Courses Schedule  -->
+    <div id="popup_Courses_Schedule" class="popup">
+    <div class="popup-content">
+        <span class="close-button" id="close-button">&times;</span>
+        <div class="container">
+            <div>
+              <h2 style="color: red;">Courses Schedule </h2>
+        
+              <table>
+                <tr style="color: white;">
+                  <th style="background-color: #172533;">Course Name</th>
+                  <th>Credit Hours</th>
+                  <th>Day</th>
+                  <th>Time</th>
+                  <th>Group Number</th>
+                  <th>Room Number</th>
+                  <th>Teams Code</th>
+                </tr>
+        
+                <tr style="color: white;">
+                  <th colspan="7" style="background-color: #172533;">Lectures</th>
+                </tr>
+        
+                <tr>
+                  <td>Principles of Accounting 2 <br> dr xxxxx</td>
+                  <td>3</td>
+                  <td>Wednesday</td>
+                  <td>8 : 10.30</td>
+                  <td>G7</td>
+                  <td>25</td>
+                  <td>csaf18</td>
+                </tr>
+        
+                <tr>
+                  <td>Behavior Management <br> dr xxxxx</td>
+                  <td>3</td>
+                  <td>Sunday</td>
+                  <td>8 : 10.30</td>
+                  <td>G6</td>
+                  <td>22</td>
+                  <td>xc5nf8</td>
+                </tr>
+        
+                <tr>
+                  <td>Operating System <br> dr xxxxx</td>
+                  <td>3</td>
+                  <td>Thursday</td>
+                  <td>8 : 10.30</td>
+                  <td>G7</td>
+                  <td>25</td>
+                  <td>bjh587</td>
+                </tr>
+        
+                <tr>
+                  <td>Information Systems <br> dr xxxxx</td>
+                  <td>3</td>
+                  <td>Sunday</td>
+                  <td>10.30 : 1</td>
+                  <td>G14</td>
+                  <td>25</td>
+                  <td>ad81d</td>
+                </tr>
+        
+                <tr>
+                  <td>English 1 <br> dr xxxxx</td>
+                  <td>3</td>
+                  <td>Monday</td>
+                  <td>8 : 10.30</td>
+                  <td>G8</td>
+                  <td>25</td>
+                  <td>dav5x</td>
+                </tr>
+        
+                <tr>
+                  <td>Social Issues <br> dr xxxxx</td>
+                  <td>3</td>
+                  <td>Saturday</td>
+                  <td>8 : 10.30</td>
+                  <td>G10</td>
+                  <td>25</td>
+                  <td>mn54a</td>
+                </tr>
+        
+                <tr style="color: white;">
+                  <th colspan="7" style="background-color: #172533;">Sections</th>
+                </tr>
+        
+              <tr>
+                <td>Operating System <br> dr xxxxx</td>
+                <td>3</td>
+                <td>Thursday</td>
+                <td>1 : 2.30</td>
+                <td>G3</td>
+                <td>25</td>
+                <td>csaf18</td>
+              </tr>
+        
+              <tr>
+                <td>Information Systems <br> dr xxxxx</td>
+                <td>3</td>
+                <td>Sunday</td>
+                <td>2.30 : 3.30</td>
+                <td>G9</td>
+                <td>25</td>
+                <td>csaf18</td>
+              </tr>
+        
+              <tr>
+                <td>Principles of Accounting 2 <br> dr xxxxx</td>
+                <td>3</td>
+                <td>Wednesday</td>
+                <td>1 : 2.30</td>
+                <td>G13</td>
+                <td>25</td>
+                <td>csaf18</td>
+              </tr>
+        
+              </table>
+            </div>
+          </div>        
+    </div>
+</div>
+
+<!-- popup section for Final Exam Results  -->
+    <div id="popup_Final_Exam_Results" class="popup">
+    <div class="popup-content">
+        <span class="close-button" id="close-button">&times;</span>
+        <div class="container">
+
+        <div class="Final_Exams_Results">
+            <h2 style="color: red;">Final Exams Results</h2>
+        </div>
+        
+        <div class="pagination">
+          <button onclick="toggleVisibility(17)"> level 1 </button>
+          <button onclick="toggleVisibility(18)"> level 2 </button>
+          <button onclick="toggleVisibility(19)"> level 3 </button>
+          <button onclick="toggleVisibility(20)"> level 4 </button>
+          </div>
+
+
+            <div class="page" id="page17" style="display: none;">
+            <h2 style="text-align: center; color: red;">Level 1 </h2>
+    
+            <table >
+                <h3 class="semesters"></h3 class="semesters">
+                  <tr>
+                    <th colspan="5">semester 1</th>
+                  </tr>
+                <tr style=" color: white;">
+                    <th style=" background-color: #172533 ;">Course Name</th>
+                    <th>Class Work Marks</th>
+                    <th>Final Exam</th>
+                    <th>Total Marks</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <td>Principles of Accounting 1</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>Principles of Economics</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>Principles of Management</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>Business Math</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>Introduction to Computer</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #172533; color: white;"> Accumulated GPA</td>
+                    <td style="background-color: #172533; color: white;">4</td>
+                    <td style="background-color: #172533; color: white;">Final Grade</td>
+                    <td style="background-color: #172533; color: white;" colspan="2">Excellent</td>
+                </tr>
+            </table>
+    
+            <br><br>
+    
+            <table>
+              <tr>
+                <th colspan="5">semester 2</th>
+              </tr>
+            <tr style=" color: white;">
+                    <th style=" background-color: #172533 ;">Course Name</th>
+                    <th>Class Work Marks</th>
+                    <th>Final Exam</th>
+                    <th>Total Marks</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <td>Principles of Accounting 2</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>Behavior Management</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>Operating System</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>Information Systems</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>English 1</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>Social Issues</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #172533; color: white;"> Accumulated GPA</td>
+                    <td style="background-color: #172533; color: white;">4</td>
+                    <td style="background-color: #172533; color: white;">Final Grade</td>
+                    <td style="background-color: #172533; color: white;" colspan="2">Excellent</td>
+                </tr>
+            </table>
+    
+            <p class="note" style="text-align: center; color: red;">Note: - All class and exam grades from 50</p>
+            
+            </div>
+    
+            <div class="page" id="page18" style="display: none;">
+                <h2 style="text-align: center; color: red;"> Level 2</h2>
+    
+                <table>
+                  <tr>
+                    <th colspan="5">semester 1</th>
+                  </tr>
+                    <tr style=" color: white;">
+                        <th style=" background-color: #172533 ;">Course Name</th>
+                        <th>Class Work Marks</th>
+                        <th>Final Exam</th>
+                        <th>Total Marks</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td>Accounting for Partnerships</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>100</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>System Analysis 1</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>100</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>English 2</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>100</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>Programming 1</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>100</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>Statistics</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>100</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>Production and Operations Management</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>100</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #172533; color: white;"> Accumulated GPA</td>
+                        <td style="background-color: #172533; color: white;">4</td>
+                        <td style="background-color: #172533; color: white;">Final Grade</td>
+                        <td style="background-color: #172533; color: white;" colspan="2">Excellent</td>
+                    </tr>
+                </table>
+            
+                <br><br>
+    
+                <table>
+                  <tr>
+                    <th colspan="5">semester 2</th>
+                  </tr>
+                    <tr style=" color: white;">
+                        <th style=" background-color: #172533 ;">Course Name</th>
+                        <th>Class Work Marks</th>
+                        <th>Final Exam</th>
+                        <th>Total Marks</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td>Accounting for Corporations</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>100</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>Management of Marketing</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>100</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>System Analysis 2</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>100</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>Creative Thinking</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>100</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>Programming 2</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>100</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>Economics of Money and Banking</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>100</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #172533; color: white;"> Accumulated GPA</td>
+                        <td style="background-color: #172533; color: white;">4</td>
+                        <td style="background-color: #172533; color: white;">Final Grade</td>
+                        <td style="background-color: #172533; color: white;" colspan="2">Excellent</td>
+                    </tr>
+                </table>
+            
+                <p class="note" style="text-align: center; color: red;">Note: - All class and exam grades from 50</p>
+    
+            </div>
+        
+            <div class="page" id="page19" style="display: none;">
+            <h2 style="text-align: center; color: red;"> Level 3</h2>
+    
+            <br>
+    
+            <p class="note" style="text-align: center; color: red;"> please pay your semester fees to see your grades</p>
+    
+        </div>
+    
+            <div class="page" id="page20" style="display: none;">
+            <h2 style="text-align: center; color: red;"> Level 4</h2>
+    
+            <br>
+    
+                <p class="note" style="text-align: center; color: red;">You didn't reach this year yet </p>
+            </div>
+    
+            </div>
+    
+    </div>
+</div>
+
+<!-- popup section for legan Final  -->
+    <div id="popup_legan_Final" class="popup">
+    <div class="popup-content">
+        <span class="close-button" id="close-button">&times;</span>
+        <div class="container">
+            <div>
+              <h2 style="color: red;">legan Final semester (2) </h2>
+        
+              <table>
+                <tr style="color: white;">
+                  <th style="background-color: #172533;">Course Name</th>
+                  <th>Room Number</th>
+                </tr>
+                <tr>
+                  <td>Principles of Accounting 2</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>Behavior Management</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>Operating System</td>
+                  <td>Lab 2</td>
+                </tr>
+                <tr>
+                  <td>Information Systems</td>
+                  <td>19</td>
+                </tr>
+                <tr>
+                  <td>English 1</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Social Issues</td>
+                  <td>2</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        
+    </div>
+</div>
+
+<!-- popup section for Medical Care  -->
+    <div id="popup_medical_care" class="popup">
+    <div class="popup-content">
+        <span class="close-button" id="close-button">&times;</span>
+        <H2 style="color: red;"> Medical Care </H2>
+        <div class="container">
+            <form id="appointmentForm">
+              <h2 style="color: red;">نموذج حجز موعد طبي</h2>
+              <label for="hospital">اسم المستشفى</label>
+              <select id="hospital" required>
+                <option value="" disabled selected>اختر المستشفى</option>
+                <option value="helwan"> مستشفى حلوان الجامعي</option>
+                <option value="badr">مستشفى بدر الجامعي</option>
+              </select>
+              
+              <label for="specialty">التخصص الطبي</label>
+              <select id="specialty" required>
+                <option value="" disabled selected>اختر التخصص</option>
+                <option value="helwan">  القلب ولاوعية الدموية</option>
+                <option value="helwan"> الاسنان </option>
+                <option value="helwan"> امراض الكلي </option>
+                <option value="helwan"> العلاج الطبيعي </option>
+                <option value="helwan"> التحاليل الطبية </option>
+                <option value="helwan"> الجلدية</option>
+                <option value="helwan"> الرمد</option>
+                <option value="helwan"> انف وذن وحنجرة</option>
+                <option value="helwan">عظام</option>
+                <option value="helwan">باطنة</option>
+                <option value="helwan">الامراض التنفسية</option>
+              </select>
+              
+              <label for="date">التاريخ المفضل للموعد</label>
+              <input style="width: 280px;" type="date" id="date" required>
+      
+              <button type="submit">حجز الموعد</button>
+            </form>
+            <p id="successMessage" style="display: none; color: red;" >تم حجز الموعد بنجاح! سنتواصل معك قريبًا لتأكيد التفاصيل.</p>
+          </div>
+        
+    </div>
+</div>
+
+<!-- popup section for MID TREM Exam Results  -->
+    <div id="popup_MID_TREM_Exam_Results" class="popup">
+    <div class="popup-content">
+        <span class="close-button" id="close-button">&times;</span>
+        <h2 style="color: red;">Mid-Term Exam Results</h2>
+
+        <div class="pagination">
+          <button onclick="toggleVisibility(13)"> level 1 </button>
+          <button onclick="toggleVisibility(14)"> level 2 </button>
+          <button onclick="toggleVisibility(15)"> level 3 </button>
+          <button onclick="toggleVisibility(16)"> level 4 </button>
+          </div>
+
+        <div class="container">
+            <div class="page" id="page13" style="display: none;">
+            <h2 style="text-align: center; color: red;">Level 1</h2>
+    
+            <table>
+              <tr>
+                <th colspan="5">semester 1</th>
+              </tr>
+            <tr style=" color: white;">
+                    <th style=" background-color: #172533 ;">Course Name</th>
+                    <th>Exam Marks</th>
+                </tr>
+                <tr>
+                    <td>Principles of Accounting 1</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Principles of Economics</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Principles of Management</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Business Math</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Introduction to Computer</td>
+                    <td>20</td>
+                </tr>
+            </table>
+    
+            <br><br>
+    
+            <table>
+              <tr>
+                <th colspan="5">semester 2</th>
+              </tr>
+            <tr style=" color: white;">
+                    <th style=" background-color: #172533 ;">Course Name</th>
+                    <th>Exam Marks</th>
+                </tr>
+                <tr>
+                    <td>Principles of Accounting 2</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Behavior Management</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Operating System</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Information Systems</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>English 1</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Social Issues</td>
+                    <td>20</td>
+                </tr>
+            </table>
+    
+            <p class="note" style="text-align: center; color: red;">Note: - All Exams grades from 20</p>
+            
+            </div>
+    
+            <div class="page" id="page14" style="display: none;">
+                <h2 style="text-align: center; color: red;">Level 2</h2>
+    
+                <table>
+            <tr>
+              <th colspan="5">semester 1</th>
+            </tr>
+              <tr style=" color: white;">
+                        <th style=" background-color: #172533 ;">Course Name</th>
+                        <th>Exam Marks</th>
+                    </tr>
+                    <tr>
+                        <td>Accounting for Partnerships</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>System Analysis 1</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>English 2</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Programming 1</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Statistics</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Production and Operations Management</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                </table>
+            
+                <br><br>
+    
+                <table>
+                  <tr>
+                    <th colspan="5">semester 2</th>
+                  </tr>
+                    <tr style=" color: white;">
+                        <th style=" background-color: #172533 ;">Course Name</th>
+                        <th>Exam Marks</th>
+                    </tr>
+                    <tr>
+                        <td>Accounting for Corporations</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Management of Marketing</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>System Analysis 2</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Creative Thinking</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Programming 2</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Economics of Money and Banking</td>
+                        <td>20</td>
+                    </tr>
+                </table>
+            
+                <p class="note" style="text-align: center; color: red;">Note: - All Exams grades from 20</p>
+    
+            </div>
+        
+            <div class="page" id="page15" style="display: none;">
+            <h2 style="text-align: center; color: red;">Level 3</h2>
+    
+            <br>
+    
+            <p class="note" style="text-align: center; color: red;"> please pay your semester fees to see your grades</p>
+    
+        </div>
+    
+            <div class="page" id="page16" style="display: none;">
+            <h2 style="text-align: center; color: red;">Level 4</h2>
+    
+            <br>
+                <p class="note" style="text-align: center; color: red;">You didn't reach this year yet </p>
+            </div>
+        
+            
+            
+        </div>
+    
+    </div>
+</div>
+
+<!-- popup section for Payment Codes  -->
+    <div id="popup_Payment_Codes" class="popup" >
+    <div class="popup-content">
+        <span class="close-button" id="close-button">&times;</span>
+        <div class="container" style="padding: 20px;">
+          <h2 style="color: red;">Payment Codes</h2>
+          
+          <div class="pagination">
+            <button onclick="toggleVisibility(7)"> level 1 </button>
+            <button onclick="toggleVisibility(8)"> level 2 </button>
+            <button onclick="toggleVisibility(10)"> level 3 </button>
+            <button onclick="toggleVisibility(11)"> level 4 </button>
+            <button onclick="toggleVisibility(12)"> Pay Your Fees</button>
+          </div>
+
+          <div class="page" id="page7" style="display: none; padding: 20px;">
+          <h2>Level 1</h2>
+      
+          <table>
+            <tr style="color: white;" >
+              <th style="background-color: #172533;">NO.</th>
+              <th>Payment Codes</th>
+              <th>Payment Info</th>
+              <th>administrative expenses</th>
+              <th>For hours or service</th>
+              <th>For Books</th>
+              <th>Total</th>
+              <th>status</th>
+      
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>58815616548</td>
+              <td>Fees of First Semester 2023 </td>
+              <td>1485</td>
+              <td>11000</td>
+              <td>750</td>
+              <td>13235</td>
+              <td style="color: green;">Paid</td>
+            </tr>
+      
+            <tr>
+              <td>2</td>
+              <td>15664187218</td>
+              <td>Fees of Second Semester 2023 </td>
+              <td>0</td>
+              <td>11200</td>
+              <td>700</td>
+              <td>11900</td>
+              <td style="color: green;">Paid</td>
+            </tr>
+      
+          
+          </table>
+          
+          <div class="Notes_under_table" style="direction: rtl; text-align: right;">
+            <h2 style="color: red;"> ملاحظات هامة </h2>
+            <p>1. يرجي العلم ان الرسوم الاداريه تدفع مره واحده في العام في الترم الاول وهي رسوم تابعه للجامعه</p>
+            <p>2. مقابل الساعات المسجله عباره عن عدد الساعات المعتمده المسجله * قيمه الساعه المعتمدة لكل طالب والتي لا تتغير منذ التحاق الطالب بالبرنامج</p>
+            <p>3. مقابل الكتب يتمثل في عدد المواد المسجله التي لها كتاب الكتروني * قيمه الكتاب والتي تم تسعيرها علي مستوى الجامعه وليس الكليه</p>
+        </div>
+      
+          </div>
+      
+          <div class="page" id="page8" style="display: none; padding: 20px;">
+              <h2>Level 2</h2>
+      
+              <table>
+                <tr style="color: white;">
+                  <th style="background-color: #172533;">NO.</th>
+                  <th>Payment Codes</th>
+                  <th>Payment Info</th>
+                  <th>administrative expenses</th>
+                  <th>For hours or service</th>
+                  <th>For Books</th>
+                  <th>Total</th>
+                  <th>status</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>24864558548</td>
+                  <td>Fees of First Semester 2023 </td>
+                  <td>2000</td>
+                  <td>11900</td>
+                  <td>850</td>
+                  <td>14750</td>
+                  <td style="color: green;">Paid</td>
+                </tr>
+        
+                <tr>
+                  <td>2</td>
+                  <td>24124548218</td>
+                  <td>Fees of Second Semester 2023 </td>
+                  <td>0</td>
+                  <td>12200</td>
+                  <td>700</td>
+                  <td>12900</td>
+                  <td style="color: green;">Paid</td>
+                </tr>
+              </table>
+        
+              <div class="Notes_under_table" style="direction: rtl; text-align: right;">
+                <h2 style="color: red;"> ملاحظات هامة </h2>
+                <p>1. يرجي العلم ان الرسوم الاداريه تدفع مره واحده في العام في الترم الاول وهي رسوم تابعه للجامعه</p>
+                <p>2. مقابل الساعات المسجله عباره عن عدد الساعات المعتمده المسجله * قيمه الساعه المعتمدة لكل طالب والتي لا تتغير منذ التحاق الطالب بالبرنامج</p>
+                <p>3. مقابل الكتب يتمثل في عدد المواد المسجله التي لها كتاب الكتروني * قيمه الكتاب والتي تم تسعيرها علي مستوى الجامعه وليس الكليه</p>
+            </div>
+            
+          </div>
+      
+          <div class="page" id="page10" style="display: none; padding: 20px;">
+          <h2>Level 3</h2>
+          <table>
+            <tr style="color: white;">
+              <th style="background-color: #172533;">NO.</th>
+              <th>Payment Codes</th>
+              <th>Payment Info</th>
+              <th>administrative expenses</th>
+              <th>For hours or service</th>
+              <th>For Books</th>
+              <th>Total</th>
+              <th>status</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>58815616548</td>
+              <td>Fees of First Semester 2023 </td>
+              <td>1,085</td>
+              <td>11,000</td>
+              <td>750</td>
+              <td>12,835</td>
+              <td style="color: green;">Paid</td>
+            </tr>
+      
+            <tr>
+              <td>2</td>
+              <td>15664187218</td>
+              <td>Fees of Second Semester 2023 </td>
+              <td>0</td>
+              <td>10200</td>
+              <td>900</td>
+              <td>11,100</td>
+              <td style="color: red;"> NOT Paid</td>
+            </tr>
+          </table>
+          
+      <div class="Notes_under_table" style="direction: rtl; text-align: right;">
+          <h2 style="color: red;"> ملاحظات هامة </h2>
+          <p>1. يرجي العلم ان الرسوم الاداريه تدفع مره واحده في العام في الترم الاول وهي رسوم تابعه للجامعه</p>
+          <p>2. مقابل الساعات المسجله عباره عن عدد الساعات المعتمده المسجله * قيمه الساعه المعتمدة لكل طالب والتي لا تتغير منذ التحاق الطالب بالبرنامج</p>
+          <p>3. مقابل الكتب يتمثل في عدد المواد المسجله التي لها كتاب الكتروني * قيمه الكتاب والتي تم تسعيرها علي مستوى الجامعه وليس الكليه</p>
+      </div>
+      
+      </div>
+      
+          <div class="page" id="page11" style="display: none; padding: 20px;">
+          <h2>Level 4</h2>
+      
+          <br><br>
+      
+          <p class="note" style="color: red;">You didn't reach this year yet </p>
+      
+          </div>
+      
+          <div class="page" id="page12" style="display: none; padding: 20px;">
+        
+        
+            <form style="width: 400px;" action="/submit" method="post" style="color: black;" >
+              <h1 style="text-align: center;">Pay Your Fees</h1>
+      
+              <br><br>
+              <div id="creditCardInfo" >
+                  <label  for="creditCardNumber">Credit Card Number</label>
+                  <input style="width: 100%;" type="number" id="creditCardNumber" name="creditCardNumber" required >
+      
+                  <label for="cvv">CVV</label>
+                  <input  style="width: 100%;"type="number" id="cvv" name="cvv" required >
+      
+                  <label for="expiryDate">Expiration Date</label>
+                  <input style="width: 95%;" type="date" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+              </div>
+      
+              <br><br>
+      
+              <input type="submit" value="Submit">
+          </form>
+        
+            </div>
+        
+      
+
+      
+        </div>
+    </div>
+</div>
+
+<!-- popup section for Courses evaluation  -->
+    <div id="popup_course_evaluation" class="popup">
+    <div class="popup-content">
+        <span class="close-button" id="close-button">&times;</span>
+        <h2 style="color: white;background-color: #172533;" >popup_course_evaluation </h2>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <img src="fb.png" alt="Logo 1">
+        <a href="https://www.facebook.com/BIS.FCBA.Helwan.uni">Facebook</a>
+      </div>
+      <div class="footer-section">
+        <img src="facebook-group-facebook-group-icon-png.png" alt="Logo 2">
+        <a href="https://www.facebook.com/groups/483323791827046">Facebook Group</a>
+      </div>
+      <div class="footer-section">
+        <img src="internet-web-icon-in-trendy-flat-style-isolated-on-white-background-website-symbol-for-your-website-design-logo-app-ui-illustration-free-vector.jpg" alt="Logo 3">
+        <a href="http://fcba.helwan.edu.eg/?fbclid=IwAR0j-OzzCcLZYOopsVdb20qZjHnQSwaYPbwM559rsuC6jn_Dftdse0RUILw">Faculty Website</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Business Information Systems (BIS). All rights reserved.</p>
+    </div>
+  </footer>
+    
+  <div class="rotate-message">
+    <p>Please rotate your device for a better viewing experience.</p>
+    <p>من فضلك ادر شاشة الهاتف للحصول علي تجربة افضل </p>
+    <button id="closeRotateMessage">Close</button>
+  </div>
+
+  <script src="script.js" defer></script>
+
+</body>
+</html>
